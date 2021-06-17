@@ -53,5 +53,6 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7"
-  }
+  },
+  "proxy": "https://akfisafk-platform-v2-4908.zeet.app/"
 }
