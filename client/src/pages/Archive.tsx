@@ -21,7 +21,7 @@ export const Archive = () => {
 
     useEffect(() => {
         async function getArchive() {
-            const response: any = await fetch('/apis/archive', {
+            const response: any = await fetch('https://akfisafk-platform-v2-4908.zeet.app/apis/archive', {
                 method: "GET",
                 headers: {
                     'Accept': 'application/json',

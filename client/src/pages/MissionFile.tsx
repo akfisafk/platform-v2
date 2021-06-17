@@ -50,7 +50,7 @@ export const MissionFile: React.FC<Props> = ({ id }) => {
 
     useEffect(() => {
         async function getLaunch() {
-            const response: any = await fetch('/apis/launchdata', {
+            const response: any = await fetch('https://akfisafk-platform-v2-4908.zeet.app/apis/launchdata', {
                 method: "POST",
                 headers: {
                     'Accept': 'application/json',
@@ -70,7 +70,7 @@ export const MissionFile: React.FC<Props> = ({ id }) => {
 
     useEffect(() => {
         async function getRocket() {
-            const response: any = await fetch('/apis/rocket', {
+            const response: any = await fetch('https://akfisafk-platform-v2-4908.zeet.app/apis/rocket', {
                 method: "POST",
                 headers: {
                     'Accept': 'application/json',
@@ -91,7 +91,7 @@ export const MissionFile: React.FC<Props> = ({ id }) => {
     useEffect(() => {
         async function getCrewMember() {
             for (let id of crewIds) {
-                const response: any = await fetch('/apis/crew', {
+                const response: any = await fetch('https://akfisafk-platform-v2-4908.zeet.app/apis/crew', {
                     method: "POST",
                     headers: {
                         'Accept': 'application/json',
@@ -113,7 +113,7 @@ export const MissionFile: React.FC<Props> = ({ id }) => {
     useEffect(() => {
         async function getCapsule() {
             for (let id of capsuleIds) {
-                const response: any = await fetch('/apis/capsule', {
+                const response: any = await fetch('https://akfisafk-platform-v2-4908.zeet.app/apis/capsule', {
                     method: "POST",
                     headers: {
                         'Accept': 'application/json',

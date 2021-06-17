@@ -26,9 +26,9 @@ app.use((err, req, res, next) => {
     if (!err.message) err.message = 'Oh no, something went wrong!'
 });
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
-}
+// if (process.env.NODE_ENV === 'production') {
+//     app.use(express.static('client/build'));
+// }
 
 app.listen(PORT, () => {
     console.log('Listening on port ' + PORT);
