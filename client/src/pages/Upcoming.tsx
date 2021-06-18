@@ -22,7 +22,7 @@ export const Upcoming = () => {
     useEffect(() => {
         async function getUpcoming() {
             const response: any = await fetch('https://akfisafk-platform-v2-4908.zeet.app/apis/upcoming', {
-                mode: 'cors',
+                mode: 'no-cors',
                 credentials: 'include',
                 method: "GET",
                 headers: {
