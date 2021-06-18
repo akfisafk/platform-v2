@@ -23,5 +23,6 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "proxy": "https://akfisafk-platform-v2-4908.zeet.app/"
 }

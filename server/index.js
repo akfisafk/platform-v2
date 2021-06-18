@@ -7,7 +7,7 @@ dotenv.config();
 
 // INITIALIZE APP AND IMPORTANT VARIABLES
 const app = express();
-app.use(cors({ origin: '*', credentials: true }));
+app.use(cors());
 app.options('*', cors())
 const PORT = process.env.PORT || 5000;
 
