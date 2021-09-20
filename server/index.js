@@ -7,7 +7,8 @@ dotenv.config();
 
 // INITIALIZE APP AND IMPORTANT VARIABLES
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(cors({ origin: '*', credentials: true }));
 app.options('*', cors())
 const PORT = process.env.PORT || 5000;
 
@@ -15,6 +16,10 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 
 app.use("/apis", apisRouter);
+
+app.get("/", (req, res) => {
+    res.send('Testing');
+})
 
 // ERROR HANDLER
 app.all('*', (req, res, next) => {
